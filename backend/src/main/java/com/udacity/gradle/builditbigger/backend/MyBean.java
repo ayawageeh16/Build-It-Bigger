@@ -1,15 +1,15 @@
 package com.udacity.gradle.builditbigger.backend;
 
+import com.app.baking.wageeh.jokejavalib.JokeClass;
+
 /** The object model for the data we are sending through endpoints */
 public class MyBean {
 
-    private String myData;
-
-    public String getData() {
-        return myData;
+    private JokeClass jokeClass;
+    public MyBean(){
+        jokeClass = new JokeClass();
     }
-
-    public void setData(String data) {
-        myData = data;
+    public String getData() {
+        return jokeClass.getJoke();
     }
 }
