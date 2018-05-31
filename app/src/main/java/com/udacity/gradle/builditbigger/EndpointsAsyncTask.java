@@ -43,7 +43,7 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
         }
 
         try {
-            return myApiService.sayHi(new MyBean()).execute().getData();
+            return myApiService.sayJoke(new MyBean()).execute().getData();
         } catch (IOException e) {
             return e.getMessage();
         }
