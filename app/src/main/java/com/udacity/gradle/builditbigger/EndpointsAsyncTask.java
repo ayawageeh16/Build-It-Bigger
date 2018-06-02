@@ -37,7 +37,6 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
                     });
             myApiService = builder.build();
         }
-
         try {
             return myApiService.sayJoke(new MyBean()).execute().getData();
         } catch (IOException e) {
